@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Nodes</title>
+    <style>
+        #canvas {
+            display:block;
+            margin:auto;
+            width:640px;
+            height:480px;
+            background-color:#C4C4C4;
+        }
+    </style>
+	<script src="graph.js"></script>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <script>
+        let canvas = document.getElementById('canvas'),
+        context = canvas.getContext('2d');
+        canvas.width = 640;
+        canvas.height = 480;
+
+        let inputNodes = [
+                    {id : 1, x : 300, y : 40, text : '1', childs : [2, 3, 4, 5]},
+                    {id : 2, x : 250, y : 80, text : '2', childs : [6]},
+                    {id : 3, x : 300, y : 100, text : '3', childs: [8]},
+                    {id : 4, x : 400, y : 100, text : '4', childs: [5]},
+                    {id : 5, x : 400, y : 200, text : '5', childs : [6,7]},
+                    {id : 6, x : 300, y : 300, text : '6', childs: [7]},
+                    {id : 7, x : 450, y : 320, text : '7'},
+                    {id: 8, x: 320, y: 150, text: '8', childs: [5]},
+        ];
+
+        let graph = new Graph(inputNodes);
+        graph.draw(context);
+    </script>
+</body>
+</html>

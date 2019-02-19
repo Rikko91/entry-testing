@@ -1,0 +1,54 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #ffffff;
+	font-family: Arial;
+	color: #383838;
+}
+
+.header {
+	background: url("img/background-image.jpg") no-repeat center center;
+	height: 200px;
+	background-size: cover;
+	background-position: center 40%;
+}
+
+.card-footer {
+	border-top: none !important;
+}
+
+.follow-img {
+	width: 24px;
+	height: 24px;
+}
+
+.area-img {
+	width: 18px;
+	height: 18px;
+}
+
+.bg-grey {
+	background-color: #F8F8F8;
+}
+
+.bg-violet {
+	background-color: #5A4D99;
+}
+
+.bg-green {
+	background-color: #BFCC36;
+}
+
+.bg-dblue {
+	background-color: #1A587A;
+}
+
+.path{
+	fill: #ffffff;
+}
+
+.rectangle{
+	fill: transparent;
+}
